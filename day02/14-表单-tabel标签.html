@@ -6,8 +6,15 @@
     <title>tabel标签</title>
 </head>
 <body>
+    <!-- 方法一 -->
+    <!-- 加了name才能保证是两者选其一 -->
     性别：
     <input type="radio" name="gender" id="man"><label for="man">男</label>
     <input type="radio" name="gender" id="woman"><label for="woman">女</label>
+    <br>
+    <!-- 方法二 -->
+    年龄：
+    <label><input type="radio" name="age">12</label>
+    <label><input type="radio" name="age">14</label>
 </body>
 </html>
