@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        div span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <span>这是一个普通的span标签</span>
+    <div>
+        <span>这是一个div中的span标签</span>
+        <!-- 儿子，孙子，重孙子都属于后代，都会被后代选择器管控 -->
+        <div>
+            <span>这是一个div中的div中的span标签</span>
+        </div>
+    </div>
+</body>
+</html>
