@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题2</title>
+    <style>
+        div p {
+            color: red;
+        }
+        /* 要想该选择器生效，p必须继承div，所以为继承关系，所以该选择器权重最小 */
+        .father {
+            color: blue;
+        }
+        /* 所以最后是红色 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="son">
+            这行文本是啥颜色？
+        </p>
+    </div>
+</body>
+</html>
