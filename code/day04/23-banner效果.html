@@ -6,16 +6,46 @@
     <title>banner测试</title>
     <style>
         .banner {
-            height: 250px;
+            height: 350px;
             background-color: #f3f3f4;
             background-image: url(./image/2.png);
             background-size: 15%;
             background-repeat: no-repeat;
             background-position: left bottom;
+            /* 文字控制属性，可以继承给子级 */
+            text-align: right;
+            color: #333;
+
+        }
+        .banner h2 {
+            font-size: 36px;
+            font-weight: 400px;
+            line-height: 100px;
+        }
+        .banner p {
+            font-size: 20px;
+        }
+        .banner a {
+            /* block独占一行，无法右对齐,不符合要求，所以用行内块 */
+            display: line-block;
+            width: 125px;
+            height: 40px;
+            background-color: #f06b1f;
+            text-align: center;
+            /* 和盒子高度一致可以垂直居中 */
+            line-height: 40px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+
         }
     </style>
 </head>
 <body>
-    <div class="banner"></div>
+    <div class="banner">
+        <h2>让创造产生价值</h2>
+        <p>我们希望小游戏平台可以提供无限的可能性，让每一个创作者都可以将他们的才华和创意传递给用户。</p>
+        <a href="#">我要报名</a>
+    </div>
 </body>
 </html>
