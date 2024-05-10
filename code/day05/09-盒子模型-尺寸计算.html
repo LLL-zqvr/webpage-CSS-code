@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-尺寸计算</title>
+    <style>
+        div {
+            /* 手动减法如下 */
+            /* width: 160px;
+            height: 160px; */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 20px;
+             /* 内减模式如下,加padding和border不会撑大盒子 */
+             box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>这是一个div标签</div>
+</body>
+</html>
