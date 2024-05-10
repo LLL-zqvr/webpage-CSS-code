@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器-公式用法</title>
+    <style>
+        li:nth-child(2n) {
+            background-color: green;
+        }
+        li:nth-child(2n-1) {
+            background-color: rgb(180, 240, 180);
+        }
+        /* li:nth-child(5n) {
+            background-color: red;
+        } */
+        li:nth-child(n+5) {
+            background-color: #fff;
+        }
+        li:nth-child(-n+5) {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+        <li>li4</li>
+        <li>li5</li>
+        <li>li6</li>
+        <li>li7</li>
+        <li>li8</li>
+        <li>li9</li>
+        <li>li10</li>
+    </ul>
+</body>
+</html>

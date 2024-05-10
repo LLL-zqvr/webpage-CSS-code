@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+        }
+        div::before {
+            content: "老鼠";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 没有display宽高不生效，因为伪元素选择器是行级 */
+            display: block;
+        }
+        div::after {
+            content: "大米";
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 目标效果：老鼠爱大米 -->
+    <div>爱</div>
+</body>
+</html>
