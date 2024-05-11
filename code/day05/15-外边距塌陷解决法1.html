@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距塌陷问题</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 父级采用内边距，直接规避该问题 */
+            padding-top: 50px;
+            /* 启用内减模式 */
+            box-sizing: border-box;
+
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* margin-top: 50px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">son</div>
+    </div>
+</body>
+</html>
