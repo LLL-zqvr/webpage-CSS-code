@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局-修改主轴方向</title>
+    <style>
+        .box {
+            display: flex;
+            /* 修改主轴方向，改成垂直排列，侧轴自动变换成水平方向 */
+            flex-direction: column;
+            /* 主轴为垂直，则视觉效果是垂直居中 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            width: 150px;
+            height: 120px;
+            background-color: pink;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/icons-solid.png" alt="">
+        <span>媒体</span>
+    </div>
+</body>
+</html>

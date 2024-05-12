@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-布局-组成</title>
+    <style>
+        /* 弹性容器 */
+        .box {
+            display: flex;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        /* 弹性盒子，沿主轴方向排列 */
+        .box div {
+            width: 200px;
+            /* 无高则拉伸 */
+            /* height: 100px; */
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 元素太多会挤压 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
