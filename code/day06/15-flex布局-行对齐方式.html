@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局-弹性换行</title>
+    <style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            /* 行对齐，起点开始 */
+            /* align-content: start; */
+
+            /* 行对齐，终点开始 */
+            /* align-content: end; */
+
+            /* 行对齐，居中开始 */
+            /* align-content: center; */
+
+            /* 行对齐，两端开始 */
+            /* align-content: space-between; */
+
+            /* 行对齐，两端有间距 */
+            /* align-content: space-around; */
+
+            /* 行对齐，两端有间距，且众间距尺寸一致 */
+            align-content: space-evenly;
+            
+            height: 400px;
+            width: 850px;
+            border: 1px solid #000;
+        }
+        .box div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
