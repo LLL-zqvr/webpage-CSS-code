@@ -22,7 +22,7 @@ body {
   display: block;
   width: 195px;
   height: 41px;
-  background-image: url(../images/logo.png);
+  background-image: url(../uploads/image.png);
   /* 隐藏文字 */
   font-size: 0;
 }
