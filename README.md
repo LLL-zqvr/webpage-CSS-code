@@ -10,6 +10,8 @@
 
 - Git
 
+### notes
+[笔记在此！](notes.md)
 ### Update
 
 **2024/5/13**
