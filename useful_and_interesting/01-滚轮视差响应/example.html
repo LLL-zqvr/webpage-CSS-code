@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            overflow-x: hidden;
+        }
+        .background {
+            background-image: url("./img/img2.jpg");
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 200vh;
+            font: 900 15rem '';
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+
+        }
+        .background::before {
+            content: '';
+            background-size: cover;
+            background-image: inherit;
+            background-position: 50% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -99;
+        }
+        h1 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            letter-spacing: 10px;
+            color: #fff;
+        }
+        h2 {
+            position: absolute;
+            letter-spacing: 2px;
+            top: 120vh;
+            width: 60%;
+            color: #fff;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>中国<br />传统文化</h1> -->
+    <div class="background"><span>中国<br />传统文化</span></div>
+    <h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Vero excepturi tenetur, maxime illum repellendus eaque 
+         libero iusto at autem cumque quae dolorem possimus provident 
+         illo voluptas veniam voluptates a cupiditate!
+    </h2>
+    <script>
+        const background = document.querySelector(".background")
+
+        document.addEventListener('scroll', () => {
+
+            const scrollY = window.scrollY
+
+            if(scrollY !== 0){
+                background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+            }else {
+                background.style.backgroundPosition = ''
+            }
+        }
+
+        )
+    </script>
+</body>
+</html>
