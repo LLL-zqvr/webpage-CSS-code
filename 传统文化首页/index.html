@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Parallax Scrolling</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background"><span>中国<br />传统文化</span></div>
+        <h1 class="head">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            
+        </h1>
+        <section class="content-one">
+            <div class="text-box">
+                <div class="cnt">
+                <h2>传统音乐</h2>
+                <p>
+                    锦城丝管日纷纷，半入江风半入云。——杜甫《赠花卿》
+                </p>
+                <p>
+                    <a href="#" class="btn">TAKE <strong>CARE OF</strong><em>YOURSEFL</em></a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section class="content-two">
+            <div class="text-box">
+                <div class="cnt">
+                <h2>传统节气</h2>
+                <p>
+                    露从今夜白，月是故乡明。———杜甫《月夜忆舍弟》<br />
+                    时雨及芒种，四野皆插秧。家家麦饭美，处处菱歌长。
+                </p>
+                <p>
+                    <a href="#" class="btn">BEST <strong>WISHS</strong><em>FOR YOU</em></a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section class="content-three">
+            <div class="text-box">
+                <div class="cnt">
+                <h2>传统体育</h2>
+                <p>
+                    院静春深昼掩扉，竹间闲看客争棋。
+                </p>
+                <p>
+                    <a href="#" class="btn">TAKE <strong>CARE OF</strong><em>YOURSEFL</em></a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section class="content-four">
+            <div class="text-box">
+                <div class="cnt">
+                <h2>传统戏剧</h2>
+                <p>
+                    Nobody can go back and start a new beginning , but anyone can start today and make a new ending.
+                    The minute you think of giving up , think of the reason why you held on so long .
+                </p>
+                <p>
+                    <a href="#" class="btn">TAKE <strong>CARE OF</strong><em>YOURSEFL</em></a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section class="content-five">
+            <div class="text-box">
+                <div class="cnt">
+                <h2>传统技艺</h2>
+                <p>
+                    Nobody can go back and start a new beginning , but anyone can start today and make a new ending.
+                    The minute you think of giving up , think of the reason why you held on so long .
+                </p>
+                <p>
+                    <a href="#" class="btn">TAKE <strong>CARE OF</strong><em>YOURSEFL</em></a>
+                </p>
+            </div>
+            </div>
+        </section>
+        <section id="img-two" class="img">
+            <h1>THOUGHTS</h1>
+        </section>
+        <section id="footer">FOOTER</section>
+    </div>
+    <script>
+        const background = document.querySelector(".background")
+
+        document.addEventListener('scroll', () => {
+
+            const scrollY = window.scrollY
+
+            if(scrollY !== 0){
+                background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+            }else {
+                background.style.backgroundPosition = ''
+            }
+        }
+
+        )
+    </script>
+</body>
+</html>
