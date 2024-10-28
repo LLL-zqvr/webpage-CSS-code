@@ -13,6 +13,7 @@ body {
     height: auto;
 }
 
+
 section,
 #footer {
     height: 100vh;
@@ -182,11 +183,13 @@ section,
 .head {
     position: absolute;
     letter-spacing: 2px;
-    top: 120vh;
+    top: 160vh;
     width: 60%;
+    font: 900 3rem '';
+    font-family:楷体 ;
     color: #fff;
-    left: 50%;
+    left: 65%;
     transform: translateX(-50%);
     padding: 30px;
-    background-color: rgba(0, 0, 0, .3);
+    /* background-color: rgba(0, 0, 0, .3); */
 }
