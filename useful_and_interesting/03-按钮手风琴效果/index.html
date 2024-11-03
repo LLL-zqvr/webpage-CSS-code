@@ -14,12 +14,13 @@
             font-family: "Poppins", sans-serif;
 
         }
-        .container {
-            display: flex;
-        }
-        .wrapper {
-            justify-self: center;
-            align-self: center;
+        html,body {
+            /* 这里是采用网格布局 */
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 94%);
         }
         .wrapper .button {
             display: inline-block;
@@ -73,35 +74,33 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <div class="button">
-                <div class="icon">
-                    <i class="material-icons">face</i>
-                </div>
-                <span>face</span>
+    <div class="wrapper">
+        <div class="button">
+            <div class="icon">
+                <i class="material-icons">face</i>
             </div>
+            <span>face</span>
+        </div>
 
-            <div class="button">
-                <div class="icon">
-                    <i class="material-icons">book</i>
-                </div>
-                <span>book</span>
+        <div class="button">
+            <div class="icon">
+                <i class="material-icons">book</i>
             </div>
+            <span>book</span>
+        </div>
 
-            <div class="button">
-                <div class="icon">
-                    <i class="material-icons">facebook</i>
-                </div>
-                <span>Facebook</span>
+        <div class="button">
+            <div class="icon">
+                <i class="material-icons">facebook</i>
             </div>
+            <span>Facebook</span>
+        </div>
 
-            <div class="button">
-                <div class="icon">
-                    <i class="material-icons">school</i>
-                </div>
-                <span>school</span>
+        <div class="button">
+            <div class="icon">
+                <i class="material-icons">school</i>
             </div>
+            <span>school</span>
         </div>
     </div>
 </body>
