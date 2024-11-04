@@ -34,7 +34,7 @@ section,
 }
 
 #footer {
-    background-color: #c0b5aa;
+    background-color: #ecb783;
     height: 50vh;
     color: #fff;
     font-size: 20vh;
@@ -145,8 +145,7 @@ section,
     line-height: 2.8;
     display: inline-block;
     background-color: #eaeaea;
-    color: #000;
-    border: 3px solid #000;
+    border: 3px solid #4f1717;
     white-space: nowrap;
     text-decoration: none;
     padding: 0 20px;
@@ -193,9 +192,9 @@ section,
     padding: 30px;
     /* background-color: rgba(0, 0, 0, .3); */
 }
+/*
 .navigation {
     text-align: center;
-    /*height: 10px;*/
     position: fixed;
     z-index: 999;
     top: 0;
@@ -205,13 +204,76 @@ section,
     list-style: none;
     margin: 0;
     font-size: 15px;
-    background-color: #1e652e;
+    background-color: #eedcaf;
+    border-bottom: rgb(239, 190, 43) solid 5px;
 }
 .logo {
     display: inline-block;
     margin-right: 50px;
 }
 .logo-pic {
-    width: 200px;
-    height: 48px;
+    width: 50px;
+    height:auto;
 }
+.top-nav {
+
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+}
+
+.top-nav:hover {
+    color: rgb(176, 135, 13);
+}
+
+*/
+
+/* 按钮样式 */
+.butt-button {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 0.75em 1em;
+    color: rgb(58, 59, 47);
+    border: 0.15em solid rgb(138, 8, 8);
+    border-radius: 2em;
+    transition: 3s;
+  }
+  .butt-button:before,
+  .butt-button:after {
+    content: "";
+    position: absolute;
+    top: -1.5em;
+    z-index: -1;
+    width: 200%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 40%;
+    background-color: rgba(255, 79, 3, 0.699);
+    transition: 3s;
+  }
+  .butt-button:before {
+    left: -80%;
+    transform: translate3d(0, 5em, 0) rotate(-340deg);
+  }
+  .butt-button:after {
+    right: -80%;
+    transform: translate3d(0, 5em, 0) rotate(390deg);
+  }
+  .butt-button:hover,
+  .butt-button:focus {
+    color: rgb(252, 252, 180);
+  }
+  .butt-button:hover:before,
+  .butt-button:hover:after,
+  .butt-button:focus:before,
+  .butt-button:focus:after {
+    transform: none;
+    background-color: #4f1717;
+  }
