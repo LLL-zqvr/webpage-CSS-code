@@ -17,7 +17,6 @@ body {
 
 .iconfont {
     font-size: 26px !important;
-    color: aqua;
     line-height: 50px;
     text-align: center;
  }
@@ -53,16 +52,17 @@ body {
  .emotion-box {
     width: 100%;
     text-align: center;
-    margin: 10px auto;
+    margin: 0px auto;
  }
 
  #emotion1,
  #emotion2 {
-    color: pink;
+    color: rgb(230, 205, 80);
     position: relative;
     top: 10px;
     font-size: 35px !important;
     animation: jitter .3s linear forwards;
+    margin-bottom: 10px;
  }
  
  #emotion2 {
@@ -84,9 +84,12 @@ body {
 
  li {
     list-style: none;
-    margin: 25px;
+    padding: 15px;
  }
 
+ li i {
+    color: #4f1717;
+ }
  li>a {
     display: flex;
     justify-content: center;
@@ -98,13 +101,13 @@ body {
  }
 
  li:hover {
-    background-color: rgba(252, 213, 206, .5);
+    background-color: rgba(202, 199, 199, 0.5);
     cursor: pointer;
  }
 
  li:hover .content,
  li:hover i {
-    color: pink;
+    color: rgb(61, 101, 52);
  }
 
  li:hover i {
@@ -124,12 +127,12 @@ body {
  @keyframes jitter {
     0% {
         /* 缩放1.2倍，顺时针旋转10° */
-        transform: scale(1.2) rotate(10deg);
+        transform: scale(1.2) rotate(20deg);
     }
 
     50% {
         
-        transform: scale(0.8) rotate(-10deg);
+        transform: scale(0.8) rotate(-20deg);
     }
 
     0% {
